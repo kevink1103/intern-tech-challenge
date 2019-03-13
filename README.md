@@ -31,3 +31,18 @@ latest versions of prometheus/prometheus: [2.7.2 2.6.1 2.5.0 2.4.3 2.3.2 2.2.1]
 In this repository you will find two go files, one main.go which contains a skeleton for you to start developing your application, and one main_test.go, which contains some test cases that should pass when the application is ready. You run the tests by writing `go test`, and there are some cases that aren't tested for - can you figure them out?
 
 We will run your application through a number of test cases not mentioned here and compare the output with an application that produces the correct output.
+
+# Result
+
+To run or test:
+
+```go
+go run main.go cases.txt
+go test
+```
+
+- First Go experience
+- Only creating Github Client once
+- Few more test cases
+- Outputs comply with the format
+- Thank you and I look forward to hearing back!
