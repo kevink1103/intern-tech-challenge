@@ -49,6 +49,16 @@ func TestLatestVersions(t *testing.T) {
 			minVersion:     semver.New("2.2.1"),
 		},
 		// Implement more relevant test cases here, if you can think of any
+		{
+			versionSlice:   []string{"0.0.0", "0.0.0"},
+			expectedResult: []string{"0.0.0"},
+			minVersion:     semver.New("0.0.0"),
+		},
+		{
+			versionSlice:   []string{"192.168.123", "192.168.124"},
+			expectedResult: []string{},
+			minVersion:     semver.New("192.168.255"),
+		},
 	}
 
 	test := func(versionData []string, expectedResult []string, minVersion *semver.Version) {
