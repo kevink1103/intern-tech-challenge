@@ -2,3 +2,5 @@ repository,min_version
 kubernetes/kubernetes,1.8.0
 prometheus/prometheus,2.2.0
 adsfad/asdfdsf,1.1.1
+/,1.2.3
+loremipsumdolorsitamet,123

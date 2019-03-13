@@ -79,9 +79,15 @@ func ReadFile(fileName string) [][]string {
 		if strings.Contains(singleLine, "repository,min_version") {
 			continue
 		}
+
 		tokens := strings.Split(singleLine, ",")
 		names := strings.Split(tokens[0], "/")
-		fileData = append(fileData, []string{names[0], names[1], tokens[1]})
+
+		if len(tokens) == 2 && len(names) == 2 {
+			fileData = append(fileData, []string{names[0], names[1], tokens[1]})
+		} else {
+			fmt.Printf("rewrite this line: %s\r\n", singleLine)
+		}
 	}
 
 	return fileData
