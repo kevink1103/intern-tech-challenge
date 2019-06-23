@@ -46,3 +46,7 @@ go test
 - Few more test cases
 - Outputs comply with the format
 - Thank you and I look forward to hearing back!
+
+## Follow-up
+
+I got invited for a video interview with Lalamove.
